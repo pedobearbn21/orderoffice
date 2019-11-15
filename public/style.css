@@ -8,8 +8,6 @@ html, body {
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
-  background-image: url("/splash.png");
-  background-color: #220052;
 }
 
 * {
@@ -89,4 +87,12 @@ p {
     opacity: 1;
     transform: none;
   }
+}
+
+.navbar-brand{
+  color: blue !important;
+  text-decoration: none ;
+}
+.navbar-brand:hover{
+  text-decoration: underline !important;
 }

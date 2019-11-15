@@ -17,9 +17,12 @@
 const Route = use('Route')
 
 Route.on('/').render('welcome')
+Route.on('/home').render('home').as('home')
 Route
   .get('/all', 'UserController.profile')
   .middleware('auth')
+Route.get('/register', 'UserController.gopageregister')
+Route.get('/login', 'UserController.gopagelogin')
 
 Route.post('/register', 'UserController.register')
 Route.post('/login', 'UserController.login')
